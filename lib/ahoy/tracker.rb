@@ -19,8 +19,8 @@ module Ahoy
     def track(name, properties = {}, options = {})
       if exclude?
         debug "Event excluded"
-      elsif missing_params?
-        debug "Missing required parameters"
+      # elsif missing_params?
+      #   debug "Missing required parameters"
       else
         data = {
           visit_token: visit_token,
