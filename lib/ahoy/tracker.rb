@@ -41,8 +41,8 @@ module Ahoy
     def track_visit(defer: false, started_at: nil)
       if exclude?
         debug "Visit excluded"
-      elsif missing_params?
-        debug "Missing required parameters"
+      # elsif missing_params?
+      #   debug "Missing required parameters"
       else
         if defer
           set_cookie("ahoy_track", true, nil, false)
